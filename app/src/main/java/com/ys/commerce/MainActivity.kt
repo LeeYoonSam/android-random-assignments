@@ -8,7 +8,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
-import com.ys.commerce.productdetail.presentation.product.detail.ProductDetailScreen
+import com.ys.commerce.formvalidation.presentation.FormValidationScreen
 import com.ys.commerce.ui.theme.CommerceAppTheme
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -20,19 +20,26 @@ class MainActivity : ComponentActivity() {
         setContent {
             CommerceAppTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+                    /**ddd
+                     * 폼 유효성 검사 화면
+                     */
+                    FormValidationScreen(
+                        modifier = Modifier.padding(innerPadding)
+                    )
+
+//                    /**
+//                     * 상품 상세 화면
+//                     */
+//                    ProductDetailScreen(
+//                        modifier = Modifier.padding(innerPadding)
+//                    )
+
                     /**
                      * 상품 리스트 화면
                      */
 //                    ProductScreen(
 //                        modifier = Modifier.padding(innerPadding)
 //                    )
-
-                    /**
-                     * 상품 상세 화면
-                     */
-                    ProductDetailScreen(
-                        modifier = Modifier.padding(innerPadding)
-                    )
                 }
             }
         }

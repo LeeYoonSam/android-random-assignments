@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Assignment App</string>
+
+    <string name="success_valid">유효성 검사 통과!</string>
+    <string name="placeholder_email">이메일을 입력해 주세요.</string>
+    <string name="placeholder_password">비밀번호를 입력해 주세요.</string>
+    <string name="login">로그인</string>
+    <string name="error_invalid_email_format">이메일 형식을 확인해주세요.</string>
+    <string name="error_password_too_short">비밀번호는 8자 이상 입력해주세요.</string>
+    <string name="error_submission_failed">제출 중 오류가 발생했습니다: %s</string>
 </resources>
